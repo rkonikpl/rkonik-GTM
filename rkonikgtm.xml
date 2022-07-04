@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4" type="plugin" method="upgrade" group="system">
+    <name>PLG_SYSTEM_RKONIKGTM</name>
+    <author>rKonik Rafał Kobyliński</author>
+    <creationDate>June 2022</creationDate>
+    <copyright>Copyright (C) 2022 rKonik. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE</license>
+    <authorEmail>rkonik@rkonik.com</authorEmail>
+    <authorUrl>rkonik.com</authorUrl>
+    <version>0.1.0</version>
+    <description>PLG_RKONIK_GTM_XML_DESCRIPTION</description>
+
+    <files>
+        <filename plugin="rkonikgtm">rkonikgtm.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_rkonikgtm.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_rkonikgtm.sys.ini</language>
+        <language tag="pl-PL">pl-PL/pl-PL.plg_system_rkonikgtm.ini</language>
+        <language tag="pl-PL">pl-PL/pl-PL.plg_system_rkonikgtm.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="idGTM"
+                       type="text"
+                       label="PLG_RKONIK_GTM_IDGTM_LABEL"
+                       description="PLG_RKONIK_GTM_IDGTM_DESC"
+               />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
