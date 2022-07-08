@@ -3,8 +3,8 @@
  * @package     ${NAMESPACE}
  * @subpackage
  *
- * @copyright   A copyright
- * @license     A "Slug" license name e.g. GPL2
+ * @copyright   rKonik Rafał Kobyliński
+ * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
 // no direct access
@@ -68,7 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','{$this->idGTM}');
 GTM;
 
-		$document->addScriptDeclaration($jsheader);
+		$document->getWebAssetManager()->addInlineScript($jsheader);
 
 	}
 
