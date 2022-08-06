@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="4" type="plugin" method="upgrade" group="system">
+<extension type="plugin" method="upgrade" group="system">
     <name>PLG_SYSTEM_RKONIKGTM</name>
     <author>rKonik Rafał Kobyliński</author>
     <creationDate>June 2022</creationDate>
@@ -7,7 +7,7 @@
     <license>GNU General Public License version 2 or later; see LICENSE</license>
     <authorEmail>rkonik@rkonik.com</authorEmail>
     <authorUrl>rkonik.com</authorUrl>
-    <version>0.1.2</version>
+    <version>1.0.0</version>
     <description>PLG_RKONIK_GTM_XML_DESCRIPTION</description>
 
     <files>
@@ -30,6 +30,13 @@
                        label="PLG_RKONIK_GTM_IDGTM_LABEL"
                        description="PLG_RKONIK_GTM_IDGTM_DESC"
                />
+                <field name="dataLayerName"
+                       type="text"
+                       default="dataLayer"
+                       label="PLG_RKONIK_GTM_DATALAYERNAME_LABEL"
+                       description=""
+                       size="10"
+                />
             </fieldset>
         </fields>
     </config>
