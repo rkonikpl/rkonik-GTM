@@ -7,9 +7,10 @@
     <license>GNU General Public License version 2 or later; see LICENSE</license>
     <authorEmail>extensions@rkonik.com</authorEmail>
     <authorUrl>rkonik.com</authorUrl>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>PLG_RKONIK_GTM_XML_DESCRIPTION</description>
 
+    <scriptfile>script.php</scriptfile>
     <files>
         <filename plugin="rkonikgtm">rkonikgtm.php</filename>
         <filename>index.html</filename>
