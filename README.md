@@ -11,6 +11,11 @@ Soon
 ## Instalation
 Falow [Joomla Documentation](https://docs.joomla.org/Installing_an_extension).
 
+## Technical Requirements
+
+* Minimum PHP: 7.2.5
+* Minimum Joomla: v4.0
+
 ## License
 
 GNU/GPL
