@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" method="upgrade" group="system">
-    <name>PLG_SYSTEM_RKONIKGTM</name>
+    <name>rKonik GTM</name>
     <author>rKonik Rafał Kobyliński</author>
     <creationDate>June 2022</creationDate>
     <copyright>Copyright (C) 2022 rKonik. All rights reserved.</copyright>
@@ -41,4 +41,9 @@
             </fieldset>
         </fields>
     </config>
+
+<!--    todo update serwer-->
+    <updateservers>
+        <server type="extension" priority="1" name="rKonik GTM"></server>
+    </updateservers>
 </extension>
