@@ -4,7 +4,7 @@
         <description>rKonik GTM is a simple plugin that facilitates adding Google Tag Manager to a website based on CMS Joomla</description>
         <element>rkonikgtm</element>
         <type>plugin</type>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/rkonikpl/rkonik-GTM/releases/download/v1.0.2/plg_rkonikgtm_1.0.2.zip</downloadurl>
         </downloads>

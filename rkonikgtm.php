@@ -39,6 +39,14 @@ class PlgSystemrkonikgtm extends CMSPlugin
 	 */
 	protected $idGTM;
 
+	/**
+	 * Affects the name of the GTM data layer
+	 *
+	 * @var
+	 * @since 1.0.3
+	 */
+	protected $dataLayerName;
+
 	function onBeforeRender()
 	{
 
@@ -59,14 +67,14 @@ class PlgSystemrkonikgtm extends CMSPlugin
 		}
 
 		$this->getIdGoogleTagManager();
-		$dataLayer=$this->params->get('dataLayerName','dataLayer');
+		$this->setDataLayerName();
 
 		$jsheader = <<<GTM
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','{$dataLayer}','{$this->idGTM}');
+})(window,document,'script','{$this->dataLayerName}','{$this->idGTM}');
 GTM;
 
 		$document->getWebAssetManager()->addInlineScript($jsheader);
@@ -113,5 +121,23 @@ GTM;
 	{
 		//todo wykonaj walidację danych
 		$this->idGTM = $this->params->get('idGTM','GTM-XXXXXX');
+	}
+
+	/**
+	 * Sets the Data Layer name
+	 *
+	 * @since 1.0.3
+	 */
+	protected function setDataLayerName() :void
+	{
+
+		if (!$this->params->get('renameDataLayer'))
+		{
+			$this->dataLayerName = 'dataLayer';
+			return;
+		}
+
+		$this->dataLayerName=$this->params->get('dataLayerName','dataLayer');
+
 	}
 }

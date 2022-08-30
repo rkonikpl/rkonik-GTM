@@ -7,7 +7,7 @@
     <license>GNU General Public License version 2 or later; see LICENSE</license>
     <authorEmail>extensions@rkonik.com</authorEmail>
     <authorUrl>rkonik.com</authorUrl>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <description>PLG_RKONIK_GTM_XML_DESCRIPTION</description>
 
     <scriptfile>script.php</scriptfile>
@@ -31,12 +31,25 @@
                        label="PLG_RKONIK_GTM_IDGTM_LABEL"
                        description="PLG_RKONIK_GTM_IDGTM_DESC"
                />
+
+                <field name="renameDataLayer"
+                       type="radio"
+                       label="PLG_RKONIK_GTM_RENAME_DATALAYER_LABEL"
+                       description="PLG_RKONIK_GTM_RENAME_DATALAYER_DESC"
+                       class="btn-group btn-group-yesno"
+                       default="0"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
                 <field name="dataLayerName"
                        type="text"
                        default="dataLayer"
                        label="PLG_RKONIK_GTM_DATALAYERNAME_LABEL"
                        description=""
                        size="10"
+                       showon="renameDataLayer:1"
                 />
             </fieldset>
         </fields>
