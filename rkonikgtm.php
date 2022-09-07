@@ -45,7 +45,7 @@ class PlgSystemrkonikgtm extends CMSPlugin
 	 * @var
 	 * @since 1.0.3
 	 */
-	protected $dataLayerName;
+	protected string $dataLayerName;
 
 	function onBeforeRender()
 	{
