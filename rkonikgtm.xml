@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" method="upgrade" group="system">
-    <name>rKonik GTM</name>
+    <name>System - rKonik GTM</name>
     <author>rKonik Rafał Kobyliński</author>
     <creationDate>June 2022</creationDate>
     <copyright>Copyright (C) 2022 rKonik. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE</license>
     <authorEmail>extensions@rkonik.com</authorEmail>
     <authorUrl>rkonik.com</authorUrl>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <description>PLG_RKONIK_GTM_XML_DESCRIPTION</description>
 
     <scriptfile>script.php</scriptfile>
