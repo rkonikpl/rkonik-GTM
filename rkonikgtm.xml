@@ -7,7 +7,7 @@
     <license>GNU General Public License version 2 or later; see LICENSE</license>
     <authorEmail>extensions@rkonik.com</authorEmail>
     <authorUrl>rkonik.com</authorUrl>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <description>PLG_RKONIK_GTM_XML_DESCRIPTION</description>
 
     <scriptfile>script.php</scriptfile>
@@ -54,6 +54,8 @@
             </fieldset>
         </fields>
     </config>
+
+    <changelogurl>https://raw.githubusercontent.com/rkonikpl/rkonik-GTM/main/changelog.xml</changelogurl>
 
     <updateservers>
         <server type="extension" priority="1" name="rKonik GTM">https://raw.githubusercontent.com/rkonikpl/rkonik-GTM/main/update-rkonik-gtm.xml</server>

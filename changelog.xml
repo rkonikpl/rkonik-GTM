@@ -1,0 +1,50 @@
+<changelogs>
+    <changelog>
+        <element>rkonikgtm</element>
+        <type>plugin</type>
+        <version>1.0.5</version>
+        <addition>
+            <item>Add changelog.xml file</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>rkonikgtm</element>
+        <type>plugin</type>
+        <version>1.0.4</version>
+        <change>
+            <item>Change the name of an add-on</item>
+        </change>
+    </changelog>
+    <changelog>
+        <element>rkonikgtm</element>
+        <type>plugin</type>
+        <version>1.0.3</version>
+        <addition>
+            <item>Added the ability to rename the data Layer</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>rkonikgtm</element>
+        <type>plugin</type>
+        <version>1.0.2</version>
+        <addition>
+            <item>Add update server</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>rkonikgtm</element>
+        <type>plugin</type>
+        <version>1.0.1</version>
+        <addition>
+            <item>A mechanism has been added to check the minimum requirements</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>rkonikgtm</element>
+        <type>plugin</type>
+        <version>1.0.0</version>
+        <note>
+            <item>Start of the project</item>
+        </note>
+    </changelog>
+</changelogs>
