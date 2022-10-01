@@ -6,10 +6,11 @@
         <type>plugin</type>
         <folder>system</folder>
         <client>0</client>
-        <version>1.0.4</version>
+        <version>1.0.5</version>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/rkonikpl/rkonik-GTM/releases/download/v1.0.4/plg_rkonikgtm_1.0.4.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/rkonikpl/rkonik-GTM/releases/download/v1.0.5/plg_rkonikgtm_1.0.5.zip</downloadurl>
         </downloads>
+        <changelogurl>https://raw.githubusercontent.com/rkonikpl/rkonik-GTM/main/changelog.xml</changelogurl>
         <tags>
             <tag>stable</tag>
         </tags>
