@@ -2,6 +2,14 @@
     <changelog>
         <element>rkonikgtm</element>
         <type>plugin</type>
+        <version>1.0.6</version>
+        <addition>
+            <item>adaptation to Joomla 4.4.x version</item>
+        </addition>
+    </changelog>
+    <changelog>
+        <element>rkonikgtm</element>
+        <type>plugin</type>
         <version>1.0.5</version>
         <addition>
             <item>Add changelog.xml file</item>

@@ -20,7 +20,7 @@ class plgSystemrkonikgtmInstallerScript extends InstallerScript
 	 */
 	public function __construct() {
 		$this->minimumJoomla = '4.0';
-		$this->minimumPhp = '7.4';
+		$this->minimumPhp = JOOMLA_MINIMUM_PHP;
 
 	}
 
