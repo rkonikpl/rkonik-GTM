@@ -17,6 +17,8 @@
         <maintainer>rKonik</maintainer>
         <maintainerurl>https://rkonik.com</maintainerurl>
         <targetplatform name="joomla" version="4.[01234]" />
+        <sha256>589bfa70dd2f3c8762be87e272da9d14c36d5ca339c001eff6dff4183e29c07a</sha256>
+        <sha384>fb1933d926451ecca60fd62b1a6e61e4ee244fedb163eee9506276130cb0ae677cfe9720b65cf764158af8391dc25710</sha384>
         <php_minimum>7.4.0</php_minimum>
     </update>
     <update>
