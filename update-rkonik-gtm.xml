@@ -16,7 +16,7 @@
         </tags>
         <maintainer>rKonik</maintainer>
         <maintainerurl>https://rkonik.com</maintainerurl>
-        <targetplatform name="joomla" version="4.[0123]" />
+        <targetplatform name="joomla" version="4.[01234]" />
         <php_minimum>7.4.0</php_minimum>
     </update>
     <update>
