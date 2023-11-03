@@ -6,13 +6,6 @@ This is a simple plugin designed to streamline the quick integration of Google T
 
 For more advanced users with expertise in data analysis and monitoring, there's also the option to customize the dataLayer name. This allows you to personalize the data structure within Google Tag Manager, which can be particularly valuable for advanced tracking and analysis needs. Thanks to this flexibility, the plugin can meet the requirements of both novice users and experienced professionals, enabling effective and customized tag management on your website.
 
-## Project page
-
-Soon
-
-## Instalation
-Falow [Joomla Documentation](https://docs.joomla.org/Installing_an_extension).
-
 ## Technical Requirements
 
 * Minimum PHP: 7.2.5
@@ -20,6 +13,13 @@ Falow [Joomla Documentation](https://docs.joomla.org/Installing_an_extension).
 
 ## Compatible
 Joomla: 4.4; 4.3; 4.2; 4.1; 4.0
+
+## Instalation
+Falow [Joomla Documentation](https://docs.joomla.org/Installing_an_extension).
+
+## Project page
+
+Soon
 
 ## License
 
