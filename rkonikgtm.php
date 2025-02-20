@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     ${NAMESPACE}
- * @subpackage
+ * @subpackage  System.rkonikgtm
  *
  * @copyright   rKonik Rafał Kobyliński
  * @license     GNU General Public License version 2 or later; see LICENSE
@@ -14,6 +14,9 @@ use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\Event\Event;
 use Joomla\Event\SubscriberInterface;
 
+/**
+ * Plugin integrujący Google Tag Manager z Joomla.
+ */
 class PlgSystemrkonikgtm extends CMSPlugin
 {
 
@@ -47,6 +50,15 @@ class PlgSystemrkonikgtm extends CMSPlugin
 	 */
 	protected string $dataLayerName;
 
+	/**
+	 * Event handler for the "onBeforeRender" event.
+	 *
+	 * This method is triggered before the document is rendered. It checks if the current client is the
+	 * site (not administrator) and if the document type is HTML. It then retrieves the GTM ID and sets
+	 * the data layer name before adding the GTM script to the document using the WebAssetManager.
+	 *
+	 * @return void
+	 */
 	function onBeforeRender()
 	{
 
@@ -82,6 +94,15 @@ GTM;
 	}
 
 
+	/**
+	 * Event handler for the "onAfterRender" event.
+	 *
+	 * This method is triggered after the document has been rendered. It checks if the current client is the
+	 * site (not administrator) and if the document type is HTML. It then injects the noscript version of the
+	 * GTM code immediately after the opening <body> tag.
+	 *
+	 * @return bool Returns true if the operation completed successfully.
+	 */
 	function onAfterRender()
 	{
 		$app = $this->app;
@@ -117,6 +138,15 @@ GTM;
 		return true;
 	}
 
+	/**
+	 * Retrieves and validates the Google Tag Manager ID from the plugin parameters.
+	 *
+	 * This method fetches the GTM ID parameter and assigns it to the class property.
+	 *
+	 * TODO: Add proper validation to ensure the GTM ID format is correct (e.g., using regex).
+	 *
+	 * @return void
+	 */
 	protected function getIdGoogleTagManager() :void
 	{
 		//todo wykonaj walidację danych
@@ -124,7 +154,10 @@ GTM;
 	}
 
 	/**
-	 * Sets the Data Layer name
+	 * Sets the name of the data layer for Google Tag Manager.
+	 *
+	 * If the plugin parameter 'renameDataLayer' is not enabled, it defaults the data layer name to 'dataLayer'.
+	 * Otherwise, it retrieves the custom name from the plugin parameters.
 	 *
 	 * @since 1.0.3
 	 */
