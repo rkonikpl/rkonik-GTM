@@ -110,7 +110,7 @@ GTM;
 		// Joomla4 version only Site Work
 		if ( $app->isClient('administrator') )
 		{
-			return;
+			return true;
 		}
 
 		$document = $app->getDocument();
@@ -118,7 +118,7 @@ GTM;
 		// Only work with HTML documents
 		if ( $document->getType() != 'html' )
 		{
-			return;
+			return true;
 		}
 
 		$body = $app->getBody();
